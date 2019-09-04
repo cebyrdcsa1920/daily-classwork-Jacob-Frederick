@@ -1,4 +1,4 @@
-import java.awt.Color
+import java.awt.Color;
 
 public class Car
 {
@@ -12,6 +12,11 @@ public class Car
         model = "Mustang";
         color = Color.GREEN;
         numPassengers = 2;
-        amountOfGas = 12.5
+        amountOfGas = 12.5;
+    }
+
+    public String toString();
+    {
+        return "This is My Goebel"
     }
 }
