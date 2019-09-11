@@ -29,8 +29,13 @@ public class Car
     {
         return amountOfGas
     }
-
-
+    /**
+     * fills gas tank
+     */
+    public void fillGasTank()
+    {
+        amountOfGas += amount;
+    }
 
 
     public String toString();
