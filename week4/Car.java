@@ -6,7 +6,7 @@ public class Car
     private Color color;
     private int numPassengers;
     private double amountOfGas;
-    private final double mpg
+    private final double mpg;
 
     public Car()
     {
@@ -14,7 +14,15 @@ public class Car
         color = Color.GREEN;
         numPassengers = 2;
         amountOfGas = 12.5;
-        mpg = 20
+        mpg = 15;
+    }
+    public Car(String model. Color color, int numPassengers, double amountOfGas, double mpg)
+    {
+        this.model = model
+        this.color = color
+        this.numPassengers = numPassengers
+        this.amountOfGas = amountOfGas
+        this.mpg = mpg
     }
     /**
      * Drives given distance
@@ -22,24 +30,24 @@ public class Car
      */
     public void drive(double distance)
     {
-        amountOfGas -= distance / mpg
+        amountOfGas -= distance / mpg;
     }
 
-    public double getAmountOfGas
+    public double getAmountOfGas()
     {
-        return amountOfGas
+        return amountOfGas;
     }
     /**
      * fills gas tank
      */
-    public void fillGasTank()
+    public void fillGasTank(double amount)
     {
         amountOfGas += amount;
     }
 
 
-    public String toString();
+    public String toString()
     {
-        return "This is My Goebel"
+        return "This is My Goebel";
     }
 }
